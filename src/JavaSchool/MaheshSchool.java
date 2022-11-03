@@ -1,18 +1,29 @@
 package JavaSchool;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MaheshSchool {
     public static void main(String [] args) {
 
-        Student S1= new Student("Ram", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", 3.0);
-        Student S2= new Student("Shyam", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", 3.4);
-        Student S3= new Student("Hari", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", 3.5);
-        Student S4= new Student("Sani", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", 3.7);
-        Student S5= new Student("Krihna", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", 2.5);
-        Student S6= new Student("Priya", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", 4.0);
-        Student S7= new Student("Supriya", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", 0.0);
+        Map<String,Double> marks = new HashMap<>();
+        marks.put("Science", 3.4);
+        marks.put("math", 4.0);
+        marks.put("social", 3.5);
+        marks.put("computer", 2.4);
+
+        MarkSheet studentMarks = new MarkSheet(marks);
+
+
+        Student S1= new Student("Ram", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", studentMarks);
+        Student S2= new Student("Shyam", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", studentMarks);
+        Student S3= new Student("Hari", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", studentMarks);
+        Student S4= new Student("Sani", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", studentMarks);
+        Student S5= new Student("Krihna", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", studentMarks);
+        Student S6= new Student("Priya", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", studentMarks);
+        Student S7= new Student("Supriya", "ramlimbu@gmail.com", 7574242, "5 ft 6 inch", studentMarks);
         List<Student> section1 = new ArrayList<>();
         section1.add(S1);
         section1.add(S2);

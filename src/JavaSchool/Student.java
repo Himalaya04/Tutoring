@@ -5,14 +5,14 @@ public class Student {
     private  String email;
     private int phoneNo;
     private String height;
-    private double gpa;
+    private MarkSheet markSheet;
 
-    Student (String name, String email,int phoneNo, String height, double gpa) {
+    Student (String name, String email,int phoneNo, String height, MarkSheet markSheet) {
         this.name = name;
         this.email = email;
         this.phoneNo = phoneNo;
         this.height = height;
-        this.gpa = gpa;
+        this.markSheet = markSheet;
 
     }
 
@@ -41,9 +41,7 @@ public class Student {
         this.height = height;
     }
     public double getGpa() {
-        return gpa;
+        return markSheet.getGPa();
     }
-    public void setGpa(double gpa) {
-        this.gpa = gpa;
-    }
+
 }
