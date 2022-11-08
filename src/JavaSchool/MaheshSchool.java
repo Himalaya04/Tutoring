@@ -42,6 +42,8 @@ public class MaheshSchool {
         class5sections.add(section_2);
 
         ClassRoom class1 = new ClassRoom(7, "class5", class5sections);
+        System.out.println(S1.heightInNumbers());
+        
     }
 
 }

@@ -37,6 +37,13 @@ public class Student {
     public String getHeight() {
         return height;
     }
+    public double heightInNumbers(){
+        String[] parse = height.split(" ");
+        double feet = Double.parseDouble(parse[0]);
+        double inch = Double.parseDouble(parse[2]);
+        return feet+inch/12;
+    }
+
     public void setHeight(String height) {
         this.height = height;
     }
