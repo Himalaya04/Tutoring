@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class MaheshSchool {
     public static void main(String [] args) {
@@ -43,7 +44,7 @@ public class MaheshSchool {
 
         ClassRoom class1 = new ClassRoom(7, "class5", class5sections);
         System.out.println(S1.heightInNumbers());
-        
+
     }
 
 }
